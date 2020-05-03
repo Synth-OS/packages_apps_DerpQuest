@@ -300,6 +300,7 @@
     <string name="battery_bar_gradient_color_summary">Use gradient color as a scale for the battery level</string>
     <string name="battery_bar_high_color">High level color</string>
     <string name="battery_bar_low_color">Low level color</string>
+    <string name="battery_bar_animate_color">Charging animation color</string>
 
     <!-- Navbar layout options -->
     <string name="navbar_layout_title">Layout</string>
@@ -972,4 +973,5 @@
     <string name="qs_bg_type_summary">Enable custom qs background</string>
     <string name="qs_bg_blur_image_title">Blur Image</string>
     <string name="qs_bg_blur_image_summary">Blur Custom Image</string>
+    <string name="default_string">Default</string>
 </resources>
