@@ -148,4 +148,10 @@
             android:defaultValue="0xffffff" />
     </PreferenceCategory>
 
+    <Preference
+         android:key="ambient_customization"
+         android:title="@string/ambient_text_category_title"
+         android:summary="@string/ambient_text_category_summary"
+         android:fragment="com.derpquest.settings.fragments.lockscreen.AmbientCustomizations" />
+
 </PreferenceScreen>

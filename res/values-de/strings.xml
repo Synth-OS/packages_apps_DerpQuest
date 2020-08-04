@@ -804,4 +804,29 @@
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G-Symbol</string>
     <string name="show_fourg_icon_summary">Anzeige von 4G im Signalsymbol anstelle von LTE</string>
+
+    <!-- Ambient Customization -->
+    <string name="ambient_text_category">Textanpassung</string>
+    <string name="ambient_image_category">Bildanpassung</string>
+    <string name="ambient_text_category_title">Ambient-AOD-Anpassungen</string>
+    <string name="ambient_text_category_summary">Anpassen des Aussehens auf dem AOD-Bildschirm</string>
+    <string name="ambient_text_title">Ambient-Text</string>
+    <string name="ambient_text_summary">Ambient-Text auf dem AOD-Bildschirm anzeigen</string>
+    <string name="ambient_text_animation_title">Ambient-Text-Animation</string>
+    <string name="ambient_text_animation_summary">Eine Animation anzeigen, wenn AoD gezeigt wird</string>
+    <string name="ambient_text_size_title">Ambient-Text-Größe</string>
+    <string name="ambient_text_font_title">Ambient-Text-Font</string>
+    <string name="ambient_text_string_title">Ambient-Text einstellen</string>
+    <string name="ambient_text_align_title">Ambient-Text ausrichten</string>
+    <string name="ambient_text_align_start_top">Rechts und Oben</string>
+    <string name="ambient_text_align_start_center">Rechts und Mitte</string>
+    <string name="ambient_text_align_start_bottom">Rechts und Unten</string>
+    <string name="ambient_text_align_center">Mitte</string>
+    <string name="ambient_text_align_end_top">Links und Oben</string>
+    <string name="ambient_text_align_end_center">Links und Mitte</string>
+    <string name="ambient_text_align_end_bottom">Links und Unten</string>
+    <string name="ambient_text_type_color_title">Farbe des Ambient-Texttyps</string>
+    <string name="ambient_text_color_title">Ambient-Text-Farbe</string>
+    <string name="ambient_notification_light_color_mode_wall">Farbe des Hintergrundbilds</string>
+    <string name="ambient_image_title">Ambient-Bild</string>
 </resources>
