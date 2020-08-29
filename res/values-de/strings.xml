@@ -828,5 +828,6 @@
     <string name="ambient_text_type_color_title">Farbe des Ambient-Texttyps</string>
     <string name="ambient_text_color_title">Ambient-Text-Farbe</string>
     <string name="ambient_notification_light_color_mode_wall">Farbe des Hintergrundbilds</string>
+    <string name="ambient_notification_light_color_mode_random">Zufällige Farbe</string>
     <string name="ambient_image_title">Ambient-Bild</string>
 </resources>
