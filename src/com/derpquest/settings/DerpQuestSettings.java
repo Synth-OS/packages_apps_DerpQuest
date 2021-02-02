@@ -157,7 +157,7 @@ public class DerpQuestSettings extends SettingsPreferenceFragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, 0, 0, R.string.derp_about_title);
+        menu.add(0, 0, 0, R.string.synth_about_title);
     }
 
     @Override
@@ -165,8 +165,8 @@ public class DerpQuestSettings extends SettingsPreferenceFragment {
         if (item.getItemId() == 0) {
             FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
 
-            AboutDerpFest newFragment = AboutDerpFest .newInstance();
-            newFragment.show(ft, "AboutDerpFest");
+            AboutSynth newFragment = AboutSynth.newInstance();
+            newFragment.show(ft, "AboutSynth");
             return true;
         }
         return false;
