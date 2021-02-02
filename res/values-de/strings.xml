@@ -830,4 +830,11 @@
     <string name="ambient_notification_light_color_mode_wall">Farbe des Hintergrundbilds</string>
     <string name="ambient_notification_light_color_mode_random">Zufällige Farbe</string>
     <string name="ambient_image_title">Ambient-Bild</string>
+
+    <!-- QS Themes Type Background -->
+    <string name="qs_background_category_title">QS-Hintergrund</string>
+    <string name="qs_bg_type_title">Hintergrund der Schnelleinstellungen</string>
+    <string name="qs_bg_type_summary">Benutzerdefinierten QS-Hintergrund aktivieren</string>
+    <string name="qs_bg_blur_image_title">Verschwommenes Bild</string>
+    <string name="qs_bg_blur_image_summary">Verschwommenes benutzerdefiniertes Bild</string>
 </resources>
