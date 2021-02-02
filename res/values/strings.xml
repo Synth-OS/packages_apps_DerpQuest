@@ -125,9 +125,25 @@
     <string name="derp_about_david" translatable="false">David Setiawan</string>
     <string name="derp_about_david_summary" translatable="false">QA</string>
 
+    <!-- About Synth -->
+    <string name="synth_about_title">About SynthOS</string>
+    <string name="synth_about_summary">Info about the team</string>
+    <string name="synth_telegram_title">SynthOS Telegram Community</string>
+    <string name="synth_telegram_summary">Tap here to open our wonderful community!</string>
+    <string name="synth_github_title">SynthOS GitHub</string>
+    <string name="synth_github_summary">Tap here to open our Github!</string>
+    <string name="synth_about_info_summary">This is a small project based on AOSP. Like DerpFest, we try to be a beginners platform and also support the Custom ROM community with unique, beautiful, and highly customizable contributions. This ROM exists thanks to DerpFest, Thank you!</string>
+    <string name="synth_about_team">SynthOS Team</string>
+    <string name="synth_about_tikki" translatable="false">TikkiX2</string>
+    <string name="synth_about_tikki_summary" translatable="false">Founder and Lead Dev</string>
+
     <!-- DerpFest device info settings -->
     <string name="derp_version">DerpFest version</string>
     <string name="derp_version_default">Unknown</string>
+
+    <!-- SynthOS device info settings -->
+    <string name="synth_version">SynthOS Build</string>
+    <string name="synth_version_default">Unknown</string>
 
     <!-- Reusable strings -->
     <string name="advanced_behavior_title">Advanced behavior</string>
