@@ -17,8 +17,10 @@
 package com.derpquest.settings.fragments.lockscreen;
 
 import android.app.WallpaperManager;
+import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.net.Uri;
@@ -62,6 +64,8 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
     private static final String LOCK_DATE_FONTS = "lock_date_fonts";
     private static final String AMBIENT_ICONS_COLOR = "ambient_icons_color";
     private static final String KEY_LOCKSCREEN_BLUR = "lockscreen_blur";
+    private static final String SYNTHETIC_FILE_SELECT = "synthetic_file_select";
+    private static final int REQUEST_PICK_IMAGE = 22;
 
     static final int MODE_DISABLED = 0;
     static final int MODE_NIGHT = 1;
@@ -74,6 +78,7 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
     private ColorPickerPreference mAmbientIconsColor;
     private SystemSettingListPreference mBatteryTempUnit;
     private SystemSettingSeekBarPreference mLockscreenBlur;
+    private Preference mImageSelect;
 
     Preference mAODPref;
 
@@ -123,6 +128,8 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
 
         mAODPref = findPreference(AOD_SCHEDULE_KEY);
         updateAlwaysOnSummary();
+
+        mImageSelect = findPreference(SYNTHETIC_FILE_SELECT);
     }
 
     @Override
@@ -153,6 +160,17 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
                 mAODPref.setSummary(R.string.always_on_display_schedule_mixed_sunrise);
                 break;
         }
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mImageSelect) {
+            Intent intent = new Intent(Intent.ACTION_PICK);
+            intent.setType("image/*");
+            startActivityForResult(intent, REQUEST_PICK_IMAGE);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preference);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -188,6 +206,17 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
             return true;
         }
         return false;
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent result) {
+        if (requestCode == REQUEST_PICK_IMAGE) {
+            if (resultCode != Activity.RESULT_OK) {
+                return;
+            }
+            final Uri imageUri = result.getData();
+            Settings.System.putString(getContentResolver(), Settings.System.SYNTHETIC_CUSTOM_IMAGE, imageUri.toString());
+        }
     }
 
     @Override

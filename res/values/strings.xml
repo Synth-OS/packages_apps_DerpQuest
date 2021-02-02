@@ -951,4 +951,12 @@
     <string name="status_bar_show_lyric_title">Status bar lyric</string>
     <string name="status_bar_show_lyric_summary">Show lyric in status bar (need App support)</string>
 
+
+    <!-- Synthetic Clock Settings -->
+    <string name="lock_synthetic_clock_title">Synthetic Clock</string>
+    <string name="file_image_select_title">Select Image</string>
+    <string name="file_image_select_summary">Select a Custom Image"</string>
+    <string name="synthetic_clock_format_title">Synthetic Clock format</string>
+    <string name="synthetic_date_format_title">Synthetic Date format</string>
+
 </resources>
