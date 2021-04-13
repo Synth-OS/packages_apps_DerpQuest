@@ -975,4 +975,12 @@
     <string name="qs_panel_image_enabled_summary">Show a image in QS Background</string>
     <string name="qs_background_file_select_title">Background Image</string>
 
+    <!-- Quick Settings Header Text -->
+    <string name="qs_header_text_container_title">QS Header Text</string>
+    <string name="qs_header_text_container_summary">Show text info in quick settings header</string>
+
+    <!-- Quick Settings Footer Page Indicator -->
+    <string name="qs_footer_page_indicator_title">Page Indicator</string>
+    <string name="qs_footer_page_indicator_summary">Show page indicator in quick settings footer</string>
+
 </resources>

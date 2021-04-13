@@ -80,6 +80,19 @@
 
     </PreferenceCategory>
 
+    <com.derp.support.preference.SystemSettingSwitchPreference
+        android:key="qs_header_text_container"
+        android:title="@string/qs_header_text_container_title"
+        android:summary="@string/qs_header_text_container_summary"
+        android:defaultValue="true" />
+
+    <!-- QS footer page indicator -->
+    <com.derp.support.preference.SystemSettingSwitchPreference
+        android:key="qs_footer_page_indicator"
+        android:title="@string/qs_footer_page_indicator_title"
+        android:summary="@string/qs_footer_page_indicator_summary"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="qs_background_category"
         android:title="@string/qs_background_category_title" >
