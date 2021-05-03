@@ -800,4 +800,9 @@
     <string name="status_bar_show_lyric_title">Statusleisten-Songtext</string>
     <string name="status_bar_show_lyric_summary">Songtext in Statusleiste anzeigen (App-Unterstützung erforderlich)</string>
 
+
+    <!-- Notification Media Options -->
+    <string name="media_category">Medienbenachrichtigungsoptionen</string>
+    <string name="artwork_media_background_title">Artwork-Medienhintergrund</string>
+    <string name="artwork_media_background_summary">Legen Sie die Mediengrafik als Hintergrund für Medienbenachrichtigungen fest</string>
 </resources>
