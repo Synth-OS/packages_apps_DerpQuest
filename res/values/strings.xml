@@ -987,4 +987,14 @@
     <string name="media_category">Media Notification options</string>
     <string name="artwork_media_background_title">Artwork media background</string>
     <string name="artwork_media_background_summary">Set media artwork as notification media background</string>
+
+    <!-- QS Custom Blur -->
+    <string name="qs_custom_blur_title">QS Custom blur</string>
+    <string name="qs_custom_blur_summary">Enable a Custom blur type in quick settings</string>
+    <string name="qs_custom_blur_type_title">QS Custom blur type</string>
+    <string name="qs_custom_blur_type_pick">Pick a type for custom blur</string>
+    <string name="qs_custom_blur_type_color_accent">Color Accent</string>
+    <string name="qs_custom_blur_type_color_custom">Custom Color</string>
+    <string name="qs_custom_blur_type_custom_image">Custom Image</string>
+    <string name="qs_custom_blur_type_wallpaper">Wallpaper</string>
 </resources>

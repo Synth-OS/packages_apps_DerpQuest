@@ -1046,4 +1046,19 @@
         <item>1</item>
     </string-array>
 
+    <!-- QS Custom Blur Type -->
+    <string-array name="qs_custom_blur_type_entries" translatable="false">
+        <item>@string/qs_custom_blur_type_color_accent</item>
+        <item>@string/qs_custom_blur_type_color_custom</item>
+        <item>@string/qs_custom_blur_type_custom_image</item>
+        <item>@string/qs_custom_blur_type_wallpaper</item>
+    </string-array>
+
+    <string-array name="qs_custom_blur_type_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
 </resources>
