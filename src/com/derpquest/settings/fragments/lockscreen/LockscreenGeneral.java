@@ -66,6 +66,10 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
     private static final String KEY_LOCKSCREEN_BLUR = "lockscreen_blur";
     private static final String SYNTHETIC_FILE_SELECT = "synthetic_file_select";
     private static final int REQUEST_PICK_IMAGE = 22;
+    private static final String AMBIENT_IMAGE_FILE_SELECT = "ambient_custom_image";
+    private static final int REQUEST_PICK_AMBIENT_IMAGE = 12;
+    private static final String AMBIENT_TEXT_BACKGROUND = "ambient_text_background";
+    private static final int REQUEST_PICK_AMBIENT_TEXT_BACKGROUND = 18;
 
     static final int MODE_DISABLED = 0;
     static final int MODE_NIGHT = 1;
@@ -79,6 +83,8 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
     private SystemSettingListPreference mBatteryTempUnit;
     private SystemSettingSeekBarPreference mLockscreenBlur;
     private Preference mImageSelect;
+    private Preference mAmbientImageSelect;
+    private Preference mAmbientTextSelect;
 
     Preference mAODPref;
 
@@ -130,6 +136,8 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
         updateAlwaysOnSummary();
 
         mImageSelect = findPreference(SYNTHETIC_FILE_SELECT);
+        mAmbientImageSelect = findPreference(AMBIENT_IMAGE_FILE_SELECT);
+        mAmbientTextSelect = findPreference(AMBIENT_TEXT_BACKGROUND);
     }
 
     @Override
@@ -168,6 +176,16 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
             Intent intent = new Intent(Intent.ACTION_PICK);
             intent.setType("image/*");
             startActivityForResult(intent, REQUEST_PICK_IMAGE);
+            return true;
+        } else if (preference == mAmbientImageSelect) {
+            Intent intent = new Intent(Intent.ACTION_PICK);
+            intent.setType("image/*");
+            startActivityForResult(intent, REQUEST_PICK_AMBIENT_IMAGE);
+            return true;
+        } else if (preference == mAmbientTextSelect) {
+            Intent intent = new Intent(Intent.ACTION_PICK);
+            intent.setType("image/*");
+            startActivityForResult(intent, REQUEST_PICK_AMBIENT_TEXT_BACKGROUND);
             return true;
         }
         return super.onPreferenceTreeClick(preference);
@@ -216,6 +234,18 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
             }
             final Uri imageUri = result.getData();
             Settings.System.putString(getContentResolver(), Settings.System.SYNTHETIC_CUSTOM_IMAGE, imageUri.toString());
+        } else if (requestCode == REQUEST_PICK_AMBIENT_IMAGE) {
+            if (resultCode != Activity.RESULT_OK) {
+                return;
+            }
+            final Uri imageUri = result.getData();
+            Settings.System.putString(getContentResolver(), Settings.System.AMBIENT_CUSTOM_IMAGE, imageUri.toString());
+        } else if (requestCode == REQUEST_PICK_AMBIENT_TEXT_BACKGROUND) {
+            if (resultCode != Activity.RESULT_OK) {
+                return;
+            }
+            final Uri imageUri = result.getData();
+            Settings.System.putString(getContentResolver(), Settings.System.AMBIENT_TEXT_GRAVITY, imageUri.toString());
         }
     }
 

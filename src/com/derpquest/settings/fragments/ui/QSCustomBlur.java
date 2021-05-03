@@ -34,6 +34,8 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
+import com.derp.support.colorpicker.ColorPickerSystemPreference;
+
 import com.android.internal.logging.nano.MetricsProto;
 
 import java.util.ArrayList;
@@ -44,14 +46,19 @@ public class QSCustomBlur extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String QS_CUSTOM_BLUR_IMAGE = "qs_custom_blur_image";
+    private static final String QS_CUSTOM_BLUR_COLOR = "qs_custom_blur_color";
     private static final int REQUEST_PICK_IMAGE = 12;
 
     private Preference mImageSelect;
+    private ColorPickerSystemPreference mColorPickerPref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.qs_custom_blur);
+
+        mColorPickerPref = (ColorPickerSystemPreference) findPreference(QS_CUSTOM_BLUR_COLOR);
+        mColorPickerPref.setOnPreferenceChangeListener(this);
         
         mImageSelect = findPreference(QS_CUSTOM_BLUR_IMAGE);
     }
@@ -67,7 +74,14 @@ public class QSCustomBlur extends SettingsPreferenceFragment implements
         return super.onPreferenceTreeClick(preference);
     }
 
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
+    public boolean onPreferenceChange(Preference preference, Object newValue) { 
+        ContentResolver resolver = getContext().getContentResolver();
+        if (preference == mColorPickerPref) {
+            int value = (Integer) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.QS_CUSTOM_BLUR_COLOR, value);
+            return true;
+        }
         return false;
     }
 

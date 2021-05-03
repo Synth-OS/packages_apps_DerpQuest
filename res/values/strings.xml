@@ -975,6 +975,12 @@
     <string name="qs_panel_image_enabled_summary">Show a image in QS Background</string>
     <string name="qs_background_file_select_title">Background Image</string>
 
+    <string name="qs_panel_image_blur_title">QS Background Image Blur</string>
+    <string name="qs_panel_image_blur_summary">Display QS Background Image with blur</string>
+    <string name="qs_panel_image_blur_radius_title">Image Blur Radius</string>
+
+    <string name="qs_blur_radius_title">QS Blur Radius (0dp to default)</string>
+
     <!-- Quick Settings Header Text -->
     <string name="qs_header_text_container_title">QS Header Text</string>
     <string name="qs_header_text_container_summary">Show text info in quick settings header</string>
@@ -991,10 +997,81 @@
     <!-- QS Custom Blur -->
     <string name="qs_custom_blur_title">QS Custom blur</string>
     <string name="qs_custom_blur_summary">Enable a Custom blur type in quick settings</string>
+    <string name="qs_custom_blur_radius_title">QS Custom blur radius</string>
     <string name="qs_custom_blur_type_title">QS Custom blur type</string>
     <string name="qs_custom_blur_type_pick">Pick a type for custom blur</string>
     <string name="qs_custom_blur_type_color_accent">Color Accent</string>
     <string name="qs_custom_blur_type_color_custom">Custom Color</string>
     <string name="qs_custom_blur_type_custom_image">Custom Image</string>
     <string name="qs_custom_blur_type_wallpaper">Wallpaper</string>
+    <string name="qs_custom_blur_color_chooser">Choose a custom color</string>
+
+    <!-- SystemUI Volume Plugin -->
+    <string name="systemui_plugin_volume_title">Volume Panel Style</string>
+    <string name="systemui_plugin_volume_pick">Pick a volume panel style</string>
+    <string name="systemui_plugin_volume_aosp">AOSP</string>
+    <string name="systemui_plugin_volume_compact">Compact</string>
+    <string name="systemui_plugin_volume_oreo">Oreo</string>
+    <string name="systemui_plugin_volume_tiled">Tiled</string>
+
+    <string name="systemui_plugin_volume_aosp_package" translatable="false">co.potatoproject.plugin.volume.aosp</string>
+    <string name="systemui_plugin_volume_compact_package" translatable="false">co.potatoproject.plugin.volume.compact</string>
+    <string name="systemui_plugin_volume_oreo_package" translatable="false">co.potatoproject.plugin.volume.oreo</string>
+    <string name="systemui_plugin_volume_tiled_package" translatable="false">co.potatoproject.plugin.volume.tiled</string>
+
+    <!-- Smart Media Theme Plugin -->
+    <string name="smart_media_theme_title">Smart Media Theme</string>
+    <string name="smart_media_theme_pick">Pick a smart media theme</string>
+    <string name="smart_media_theme_default">Default</string>
+    <string name="smart_media_theme_text">Text Media</string>
+
+    <string name="smart_media_theme_default_val" translatable="false">default</string>
+    <string name="smart_media_theme_text_val" translatable="false">text_media</string>
+
+    <!-- Ambient Image -->
+    <string name="ambient_category_title">Ambient</string>
+    <string name="ambient_image_enabled_title">Ambient Image</string>
+    <string name="ambient_image_enabled_summary">Enable a Custom Image in ambient screen</string>
+    <string name="ambient_custom_image_select_title">Ambient Custom Image</string>
+
+    <string name="ambient_image_blur_title">Ambient Image Blur</string>
+    <string name="ambient_image_blur_summary">Display Ambient Image with blur</string>
+    <string name="ambient_image_blur_radius_title">Image Blur Radius</string>
+
+    <string name="ambient_image_hide_type_title">Hide animation type</string>
+    <string name="ambient_image_show_type_title">Show animation type</string>
+    <string name="ambient_image_animation_type_pick">Pick a animation type</string>
+    <string name="ambient_image_animation_alpha">Alpha</string>
+    <string name="ambient_image_animation_slide_to_left">Slide to left</string>
+    <string name="ambient_image_animation_slide_to_right">Slide to right</string>
+    <string name="ambient_image_animation_slide_to_left_alpha">Slide to left + Alpha</string>
+    <string name="ambient_image_animation_slide_to_right_alpha">Slide to right + Alpha</string>
+
+    <string name="ambient_text_enabled_title">Ambient Text</string>
+    <string name="ambient_text_enabled_summary">Enable a Custom Text in ambient screen</string>
+    <string name="ambient_custom_text_title">Custom Text</string>
+
+    <string name="ambient_text_custom_color_start_title">Start Color</string>
+    <string name="ambient_text_custom_color_final_title">Final Color</string>
+
+    <string name="ambient_text_vertical_location_title">Vertical Position</string>
+    <string name="ambient_text_horizontal_location_title">Horizontal Position</string>
+    <string name="ambient_text_rotation_title">Rotation</string>
+    <string name="ambient_text_size_title">Font Size</string>
+    <string name="ambient_text_font_title">Font</string>
+    <string name="ambient_text_font_dialog_title">Select a Font</string>
+    <string name="ambient_text_font_summary">Select a font for yout text ambient</string>
+
+    <string name="ambient_text_color_type_title">Color type</string>
+    <string name="ambient_text_color_type_pick">Pick a Color type</string>
+    <string name="ambient_text_color_type_accent">Color Accent</string>
+    <string name="ambient_text_color_type_custom">Custom Color (Start)</string>
+    <string name="ambient_text_color_type_background">Background</string>
+    <string name="ambient_text_color_type_gradient">Gradient (Start to Final)</string>
+    <string name="ambient_text_color_type_lava_lamp">Lava Lamp</string>
+    <string name="ambient_text_color_type_lava_lamp_custom">Lava Lamp with Custom Colors (Start to Final)</string>
+    
+    <string name="ambient_hide_keyguard_title">Hide Aod Content</string>
+    <string name="ambient_hide_keyguard_summary">Hide clock, status and more</string>
+
 </resources>
