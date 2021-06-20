@@ -1107,4 +1107,30 @@
         <item>5</item>
     </string-array>
 
+    <!-- Gravity Left Center Right -->
+    <string-array name="gravity_lcr_entries" translatable="false">
+        <item>@string/gravity_lcr_left</item>
+        <item>@string/gravity_lcr_center</item>
+        <item>@string/gravity_lcr_right</item>
+    </string-array>
+
+    <string-array name="gravity_lcr_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Header tint mode -->
+    <string-array name="header_tint_mode_entries" translatable="false">
+        <item>@string/header_tint_mode_disabled</item>
+        <item>@string/header_tint_mode_image_foreground</item>
+        <item>@string/header_tint_mode_accent</item>
+    </string-array>
+
+    <string-array name="header_tint_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 </resources>

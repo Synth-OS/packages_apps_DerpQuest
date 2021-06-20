@@ -73,4 +73,35 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="tint_mode_category"
+        android:title="@string/tint_mode_category_title" >
+
+        <com.derp.support.preference.SystemSettingListPreference
+            android:key="status_bar_custom_header_tint"
+            android:title="@string/status_bar_custom_header_tint_title"
+            android:dialogTitle="@string/status_bar_custom_header_tint_pick"
+            android:entries="@array/header_tint_mode_entries"
+            android:entryValues="@array/header_tint_mode_values"
+            android:summary="%s"
+            android:defaultValue="1" />
+
+        <com.derp.support.preference.SystemSettingSwitchPreference
+            android:key="status_bar_custom_header_tint_icons"
+            android:title="@string/status_bar_custom_header_tint_icons_title"
+            android:summary="@string/status_bar_custom_header_tint_icons_summary"
+            android:defaultValue="false" />
+
+        <com.derp.support.preference.CustomSystemSeekBarPreference
+            android:key="status_bar_custom_header_tint_alpha"
+            android:title="@string/status_bar_custom_header_tint_alpha_title"
+            settings:allowEditText="true"
+            android:max="255"
+            settings:min="0"
+            settings:units=""
+            settings:interval="1"
+            android:defaultValue="127" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

@@ -442,6 +442,18 @@
     <string name="file_header_provider_title">Custom image</string>
     <string name="file_header_provider" translatable="false">file</string>
 
+    <!-- Tint mode -->
+    <string name="tint_mode_category_title">Tint Mode</string>
+    <string name="status_bar_custom_header_tint_title">Header Tint Mode</string>
+    <string name="status_bar_custom_header_tint_pick">Pick a tint mode</string>
+    <string name="header_tint_mode_disabled">Disabled</string>
+    <string name="header_tint_mode_image_foreground">Image color foreground</string>
+    <string name="header_tint_mode_accent">Accent</string>
+    <!-- Tint icons -->
+    <string name="status_bar_custom_header_tint_icons_title">Tint icons</string>
+    <string name="status_bar_custom_header_tint_icons_summary">Tint icons with image color foreground</string>
+    <string name="status_bar_custom_header_tint_alpha_title">Tint alpha</string>
+
     <!-- QS panel background opacity -->
     <string name="qs_panel_alpha_title">Panel opacity</string>
 
@@ -1073,5 +1085,36 @@
     
     <string name="ambient_hide_keyguard_title">Hide Aod Content</string>
     <string name="ambient_hide_keyguard_summary">Hide clock, status and more</string>
+
+    <!-- Clear All Button Options -->
+    <string name="clear_all_button_category">Clear All Button</string>
+    <string name="clear_all_button_gravity_title">Clear All Button Gravity</string>
+    <string name="clear_all_button_gravity_pick">Select a gravity</string>
+
+    <!-- Gravity Left Center Right -->
+    <string name="gravity_lcr_left">Left</string>
+    <string name="gravity_lcr_center">Center</string>
+    <string name="gravity_lcr_right">Right</string>
+
+    <!-- Lock Gravity -->
+    <string name="lock_gravity_title">Gravity</string>
+    <string name="lock_icon_gravity_title">Lock Icon Gravity</string>
+    <string name="lock_clock_gravity_title">Clock Gravity</string>
+    <string name="lock_owner_info_gravity_title">Owner Info Gravity</string>
+    <string name="lock_aod_icons_gravity_title">AOD Icons Gravity</string>
+
+    <!-- Lock Margin -->
+    <string name="lock_margin_title">Margin</string>
+    <string name="lock_icon_margin_title">Lock Icon Margin</string>
+    <string name="lock_clock_margin_title">Clock Margin</string>
+    <string name="lock_owner_info_margin_title">Owner Info Margin</string>
+    <string name="lock_aod_icons_margin_title">AOD Icons Margin</string>
+
+    <!-- Notification Headers Options -->
+    <string name="notification_headers_category">Notification Headers</string>
+    <string name="separators_notification_header_title">Separators in header</string>
+    <string name="separators_notification_header_summary">Add separators in notification headers</string>
+    
+    <string name="notification_header_gravity_title">Notification Header Text Gravity</string>
 
 </resources>

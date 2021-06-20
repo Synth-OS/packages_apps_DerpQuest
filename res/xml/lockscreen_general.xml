@@ -122,6 +122,92 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="lock_gravity"
+        android:title="@string/lock_gravity_title">
+
+        <com.derp.support.preference.SystemSettingListPreference
+            android:key="lock_icon_gravity"
+            android:title="@string/lock_icon_gravity_title"
+            android:dialogTitle="@string/clear_all_button_gravity_pick"
+            android:entries="@array/gravity_lcr_entries"
+            android:entryValues="@array/gravity_lcr_values"
+            android:summary="%s"
+            android:defaultValue="1" />
+
+        <com.derp.support.preference.SystemSettingListPreference
+            android:key="lock_clock_gravity"
+            android:title="@string/lock_clock_gravity_title"
+            android:dialogTitle="@string/clear_all_button_gravity_pick"
+            android:entries="@array/gravity_lcr_entries"
+            android:entryValues="@array/gravity_lcr_values"
+            android:summary="%s"
+            android:defaultValue="1" />
+
+        <com.derp.support.preference.SystemSettingListPreference
+            android:key="lock_owner_info_gravity"
+            android:title="@string/lock_owner_info_gravity_title"
+            android:dialogTitle="@string/clear_all_button_gravity_pick"
+            android:entries="@array/gravity_lcr_entries"
+            android:entryValues="@array/gravity_lcr_values"
+            android:summary="%s"
+            android:defaultValue="1" />
+
+        <com.derp.support.preference.SystemSettingListPreference
+            android:key="lock_aod_icons_gravity"
+            android:title="@string/lock_aod_icons_gravity_title"
+            android:dialogTitle="@string/clear_all_button_gravity_pick"
+            android:entries="@array/gravity_lcr_entries"
+            android:entryValues="@array/gravity_lcr_values"
+            android:summary="%s"
+            android:defaultValue="1" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="lock_margin"
+        android:title="@string/lock_margin_title">
+
+        <com.derp.support.preference.CustomSystemSeekBarPreference
+            android:key="lock_icon_margin"
+            android:title="@string/lock_icon_margin_title"
+            settings:allowEditText="true"
+            android:max="100"
+            settings:min="0"
+            settings:units="dp"
+            settings:interval="1"
+            android:defaultValue="20" />
+
+        <com.derp.support.preference.CustomSystemSeekBarPreference
+            android:key="lock_clock_margin"
+            android:title="@string/lock_clock_margin_title"
+            settings:allowEditText="true"
+            android:max="100"
+            settings:min="0"
+            settings:units="dp"
+            settings:interval="1"
+            android:defaultValue="16" />
+
+        <com.derp.support.preference.CustomSystemSeekBarPreference
+            android:key="lock_owner_info_margin"
+            android:title="@string/lock_owner_info_margin_title"
+            settings:allowEditText="true"
+            android:max="100"
+            settings:min="0"
+            settings:units="dp"
+            settings:interval="1"
+            android:defaultValue="16" />
+
+        <com.derp.support.preference.CustomSystemSeekBarPreference
+            android:key="lock_aod_icons_margin"
+            android:title="@string/lock_aod_icons_margin_title"
+            settings:allowEditText="true"
+            android:max="100"
+            settings:min="0"
+            settings:units="dp"
+            settings:interval="1"
+            android:defaultValue="16" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="lock_aod_icons"
         android:title="@string/lock_aod_icons_title">
 
