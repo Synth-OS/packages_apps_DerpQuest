@@ -1099,4 +1099,12 @@
 
     <string name="ambient_hide_keyguard_title">Hide Aod Content</string>
     <string name="ambient_hide_keyguard_summary">Hide clock, statusbar and more</string>
+
+    <!-- Synthetic Clock Settings -->
+    <string name="lock_synthetic_clock_title">Synthetic Clock</string>
+    <string name="file_image_select_title">Select Image</string>
+    <string name="file_image_select_summary">Select a Custom Image"</string>
+    <string name="synthetic_clock_format_title">Synthetic Clock format</string>
+    <string name="synthetic_date_format_title">Synthetic Date format</string>
+
 </resources>
